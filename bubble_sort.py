@@ -11,12 +11,10 @@
     3、针对所有的元素重复以上的步骤，除了最后一个；
     4、重复步骤1~3，直到排序完成。
 """
-
-
-# 冒泡排序算法实现
 import rdlist
 
 
+# 冒泡排序算法实现
 def bubble_sort(arr):
     count = len(arr)
     for i in range(count):
