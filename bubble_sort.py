@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# File  : Bubble_Sort.py
+# File  : bubble_sort.py
 # Author: ZhouZijian
 # Date  : 2018/9/21
 
@@ -11,4 +11,21 @@
     3、针对所有的元素重复以上的步骤，除了最后一个；
     4、重复步骤1~3，直到排序完成。
 """
-# 稍作调整试试同步功能
+
+
+# 冒泡排序算法实现
+import rdlist
+
+
+def bubble_sort(arr):
+    count = len(arr)
+    for i in range(count):
+        for j in range(i+1, count):
+            if arr[i] > arr[j]:
+                arr[i], arr[j] = arr[j], arr[i]
+    return arr
+
+
+# 检测
+if __name__ == "__main__":
+    print("排序后列表：", bubble_sort(rdlist.rdlist(int(input("输入待检测列表长度：")))))
