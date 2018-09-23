@@ -17,9 +17,9 @@ import rdlist
 # 选择排序算法实现O(n^2)
 def selection_sort(arr):
     count = len(arr)
-    for i in range(count-1):
+    for i in range(count - 1):
         key = arr[i]
-        for j in range(i+1, count):
+        for j in range(i + 1, count):
             if arr[j] < key:
                 key = arr[j]
                 arr[i], arr[j] = arr[j], arr[i]
