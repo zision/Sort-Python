@@ -18,10 +18,10 @@ import rdlist
 def selection_sort(arr):
     count = len(arr)
     for i in range(count - 1):
-        key = arr[i]
+#        key = arr[i]
         for j in range(i + 1, count):
-            if arr[j] < key:
-                key = arr[j]
+            if arr[j] < arr[i]:
+#                key = arr[j]
                 arr[i], arr[j] = arr[j], arr[i]
     return arr
 
